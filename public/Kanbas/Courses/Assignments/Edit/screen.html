@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Edit Assignments</title>
+</head>
+<body>
+<table>
+<tbody>
+<tr>
+<td valign="top">
+<ul>
+<li><a href="/Kanbas/Account/Profile/screen.html">
+Account</a></li>
+<li>
+<a href="#">Dashboard</a>
+</li>
+<li>
+<a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+</li>
+<li>
+<a href="#">Calendar</a></li>
+<li><a href="#">Inbox</a></li>
+<li><a href="#">History</a></li>
+<li><a href="#">Studio</a></li>
+<li><a href="#">Commons</a></li>
+<li><a href="#">Help</a></li>
+</ul>
+
+</td>
+<td valign="top">
+<ul>
+<li>
+<a href="/Kanbas/Courses/Home/screen.html">
+Home</a></li>
+<li><a href="#">
+Modules</a></li>
+<li><a href="#">
+Piazza</a></li>
+<li><a href="#">
+Zoom Meetings</a></li>
+<li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+<li><a href="#">Quizzes</a></li>
+<li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+<li><a href="#">People</a></li>
+<li><a href="#">Panopto Video</a></li>
+<li><a href="#">Discussions</a></li>
+<li><a href="#">Announcements</a></li>
+<li><a href="#">Pages</a></li>
+<li><a href="#">Files</a></li>
+<li><a href="#">Rubrics</a></li>
+<li><a href="#">Outcomes</a></li>
+<li><a href="#">Collaborations</a></li>
+<li><a href="#">Syllabus</a></li>
+<li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
+</ul>         
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td valign="top">
+<select id="speedgrader">
+<option value="SPEEDGRADER">SpeedGrader</option>
+<option value="DUMMY VALUE">Dummy Value</option>
+</select>
+<hr width="150px" align="left">
+<h2>Assignment Name</h2>
+<input type="text" id="assignment-name" value="A1 - ENV + HTML">
+<p>
+<form id="text-area">
+<textarea cols="25" rows="3">This is the assignment description.</textarea>
+</form>
+</p>
+<form id="text-fields">
+<p>
+<label for="points-field">Points</label><br/>
+<input id="points-text" value="100"/>
+</p>
+<p>
+<label for="assignment-group-field">Assignment Group</label><br/>
+<select> 
+<option value="ASSIGNMENTS">ASSIGNMENTS</option>
+</select>
+</p>
+<p>
+<label for="display-grade-field">Display Grade as</label><br/>
+<select> 
+<option value="PERCENTAGE">Percentage</option>
+</select>
+</p>
+<p>
+<label for="submission-type-field">Submission Type</label><br/>
+<select> 
+<option value="ONLINE">Online</option>
+</select>
+</p>
+<p>
+<label for="online-entry-options">Online Entry Options</label><br/>
+<input type="checkbox" value="TEXTENTRY"
+id="chkbox-text-entry"/>
+<label for="chkbox-text-entry">Text Entry</label><br/>
+<input type="checkbox" value="WEBSITEURL"
+id="chkbox-website-url"/>
+<label for="chkbox-website-url">Website URL</label><br/>
+<input type="checkbox" value="MEDIARECORDINGS"
+id="chkbox-media-recordings"/>
+<label for="chkbox-media-recoridngs">Media Recordings</label><br/>
+<input type="checkbox" value="STUDENTANNOTATION"
+id="chkbox-student-annotation"/>
+<label for="chkbox-student-annotation">Student Annotation</label><br/>
+<input type="checkbox" value="FILEUPLOADS"
+id="chkbox-file-uploads"/>
+<label for="chkbox-file-uploads">File Uploads</label><br/>
+</p>
+<p>
+<label>Assign</label><br/>
+<label for="assign-to-field">Assign To</label><br/>
+<input type="text" value="Everyone">
+</p>
+</form>
+<form id="due-date-field">
+<p>   
+<label for="date-field-due"> Due </label><br/>
+<input type="date" id="date-field-due" value="2021-01-01"/>
+</p>
+<p>
+<label for="date-field-available"> Available from</label><br/>
+<input type="date" id="date-field-available" value="2021-01-01"/> 
+</p>
+<p>
+<label for="date-field-until"> Until</label><br/>
+<input type="date" id="date-field-until" value="2021-01-01"/> 
+</p>
+</form>
+<form action="../screen.html">
+<input type="submit" value="Cancel">
+<input type="submit" value="Save">
+</form>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
