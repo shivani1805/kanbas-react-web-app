@@ -1,0 +1,71 @@
+.wd-button-publish,.wd-button{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2pxpx;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: light;
+    border: 1.5px solid lightgray;
+   
+}
+
+.wd-button-publish{
+    background-color: rgb(36, 161, 89);
+    color: white;
+}
+.wd-button-publish:hover{
+
+    background: linear-gradient(rgba(29, 137, 74, 10)0 0 );
+}
+
+.wd-button-ctwo{
+    background-color: rgb(243, 243, 243);
+    border: 1.5px solid lightgray;
+    border-radius: 4px;
+    padding-top: 6px;
+padding-bottom: 6px;
+margin-top: 5px;
+width: 230px;
+text-align: left;
+}
+.wd-buttons-container-two .wd-button-ctwo a {
+   
+text-decoration: none;
+color: black;
+font-weight: light;
+}
+
+.wd-buttons-container-two .wd-button-ctwo:hover {
+    background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
+
+}
+
+
+  .wd-comingup-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+  margin-top: 10px;
+  }
+
+  .wd-comingup-container h5 {
+    order: 1;
+  }
+  
+  .wd-comingup-container a ,.wd-comingup-content-container ul li a{
+    order: 2; 
+    text-decoration: none;
+    color: red;
+  }
+
+  .wd-comingup-container a:hover ,.wd-comingup-content-container ul li a:hover {
+
+    text-decoration: underline;
+  
+  }
+
+ 

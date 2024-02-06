@@ -1,247 +1,176 @@
 <html>
-  <head>
-    <title>Grades</title>
-  </head>
-  <body>
-<table>
-<tbody>
-<tr>
-    <td valign="top">
-        <ul>
-            <li><a href="/Kanbas/Account/Profile/screen.html">
-               Account</a></li>
-            <li>
-             <a href="#">Dashboard</a>
-            </li>
-            <li>
-             <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-            </li>
-            <li>
-             <a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-           </ul>
-           
-    </td>
-    <td valign="top">
-        <ul>
-            <li>
-              <a href="/Kanbas/Courses/Home/screen.html">
-                Home</a></li>
-            <li><a href="#">
-                Modules</a></li>
-            <li><a href="#">
-                Piazza</a></li>
-            <li><a href="#">
-                Zoom Meetings</a></li>
-            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-        </ul>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+    
+</head>
+<body >
+    <div class="row">
+        <div class="col-2" style="width: 80px;">
+            <ul class="wd-kanbas-navigation">
+                <li><a href="http://northeastern.edu">N</a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user-circle"></i>Account</a></li>
+                <li>
+                  <a href="/Kanbas/Dashboard/screen.html">
+                    <i class="fa fa-tachometer"></i> Dashboard</a>
+                </li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a> </li>
+                <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox"></i><br>Inbox</a></li>
+                <li><a href="#"><i class="fa fa-clock-o"></i>History</a></li>
+                <li><a href="#"><i class="fa fa-desktop"></i>Studio</a></li>
+                <li><a href="#"><i class="fa fa-arrow-circle-right"></i>Commons</a></li>
+                <li><a href="#"><i class="fa fa-question-circle"></i><br/>Help</a></li>
+              </ul>    
+        </div>
+        <div class="col-10">
+            <div class="row">
+                <div class="wd-breadcrumb-container" style="padding-bottom: 0;">
+            <nav style="--bs-breadcrumb-divider: '>';padding-left: 40px;padding-top: 10px;" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="fa fa-bars" style="padding-right: 5px; font-weight: lighter; font-size: small;"></i><a href="/Kanbas/Courses/Home/screen.html">CS5610.11744.202310</a></li>
+                    <li class="breadcrumb-item active" aria-current><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                </ol>
+              </nav>
+         </div>
+         </div>
           
-           
-    </td>
-    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td valign="top" >
-        <select id="select-gradebook">
-            <option value="gradebook">Gradebook</option>
-         </select>
-         <button type="button">Import</button>
-         <select id="select-export">
-            <option value="Export">Export</option>
-         </select>
-         <button type="button">Configure</button>
-        <h3>Student Names</h3>
-        <input type="text" placeholder="Search Students" id="text-fields-student-names"/>
-        <h3>Assignment Names</h3>
-        <input type="text" placeholder="Search Assignments" id="text-fields-assignment-names"/>
-        <br/><br/>
-        <button type="button">Apply Filters</button>
-        <p>
-        <table border="1" width="100%"> 
-         <thead>
-            <tr>
-            <th>Student Name</th>
-            <th>A1 SETUP<br/>Out of 100</th>
-            <th>A2 HTML<br/>Out of 100</th>
-            <th>A3 CSS<br/>Out of 100</th>
-            <th>A4 BOOTSTRAP<br/>Out of 100</th>
-            <th>A5 JAVASCRIPT<br/>Out of 100</th>
-            <th>A6 REACT<br/>Out of 100</th>
-            <th>A7 REDUX<br/>Out of 100</th>
-            <th>A8 NODE<br/>Out of 100</th>
-            <th>A9 MONGO<br/>Out of 100</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr align="center">
-                    <td align="left">Alice Wonderland</td>
-                    <td>98</td>
-                    <td>89</td>
-                    <td>87</td>
-                    <td>90</td>
-                    <td>89</td>
-                    <td>94</td>
-                    <td>88</td>
-                    <td>87</td>
-                    <td>100</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Princess Leia</td>
-                    <td>98</td>
-                    <td>80</td>
-                    <td>87</td>
-                    <td>86</td>
-                    <td>100</td>
-                    <td>94</td>
-                    <td><input type="text" id="input-grade-pl" value="85" maxlength="3" size="3"></td>
-                    <td>84</td>
-                    <td>92</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Luke Skywalker</td>
-                    <td><input type="text" id="input-grade-ls" value="99" maxlength="3" size="3"></td>
-                    <td>88</td>
-                    <td>97</td>
-                    <td>82</td>
-                    <td>96</td>
-                    <td>93</td>
-                    <td>95</td>
-                    <td>100</td>
-                    <td>93</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Han Solo</td>
-                    <td>83</td>
-                    <td>99</td>
-                    <td>94</td>
-                    <td>98</td>
-                    <td><input type="text" id="input-grade-hs" value="86" maxlength="3" size="3"></td>
-                    <td>85</td>
-                    <td>86</td>
-                    <td>80</td>
-                    <td>84</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Lando Calresian</td>
-                    <td>83</td>
-                    <td><input type="text" id="input-grade-lc" value="92" maxlength="3" size="3"></td>
-                    <td>80</td>
-                    <td>80</td>
-                    <td>92</td>
-                    <td>92</td>
-                    <td>94</td>
-                    <td>87</td>
-                    <td>95</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Boba Fet</td>
-                    <td>85</td>
-                    <td>89</td>
-                    <td>94</td>
-                    <td>83</td>
-                    <td>83</td>
-                    <td>84</td>
-                    <td>91</td>
-                    <td>87</td>
-                    <td>96</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Darth Vader</td>
-                    <td>81</td>
-                    <td>81</td>
-                    <td><input type="text" id="input-grade-dv" value="96" maxlength="3" size="3"></td>
-                    <td>80</td>
-                    <td>89</td>
-                    <td>88</td>
-                    <td>82</td>
-                    <td>80</td>
-                    <td>82</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Obi-Wan Kenobi</td>
-                    <td><input type="text" id="input-grade-ok" value="85" maxlength="3" size="3"></td>
-                    <td>99</td>
-                    <td>87</td>
-                    <td>82</td>
-                    <td>88</td>
-                    <td>83</td>
-                    <td>88</td>
-                    <td>92</td>
-                    <td>80</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">R2-D2</td>
-                    <td>81</td>
-                    <td><input type="text" id="input-grade-rd1" value="92" maxlength="3" size="3"></td>
-                    <td><input type="text" id="input-grade-rd2" value="82" maxlength="3" size="3"></td>
-                    <td>86</td>
-                    <td>83</td>
-                    <td><input type="text" id="input-grade-rd3" value="84" maxlength="3" size="3"></td>
-                    <td>98</td>
-                    <td>85</td>
-                    <td>96</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">C-3PO</td>
-                    <td>94</td>
-                    <td>98</td>
-                    <td>83</td>
-                    <td>83</td>
-                    <td>100</td>
-                    <td>96</td>
-                    <td>96</td>
-                    <td>85</td>
-                    <td>87</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Yoda</td>
-                    <td>80</td>
-                    <td>89</td>
-                    <td>99</td>
-                    <td>89</td>
-                    <td>96</td>
-                    <td>85</td>
-                    <td>96</td>
-                    <td>92</td>
-                    <td>85</td>
-                </tr>
-                <tr align="center">
-                    <td align="left">Admiral Ackbar</td>
-                    <td>82</td>
-                    <td>88</td>
-                    <td>95</td>
-                    <td>100</td>
-                    <td><input type="text" id="input-grade-aa" value="93" maxlength="3" size="3"></td>
-                    <td>98</td>
-                    <td>85</td>
-                    <td>87</td>
-                    <td>99</td>
-                </tr>
-            </tbody>
-         </tbody>
-        </table>
-        </p>
-        
-        
+            <hr style="margin-top: 0;">
+            <div class="row">
+                <div class="col-1">
+                
+                    <ul class="wd-navigation">
+                        <li>
+                          <a href="/Kanbas/Courses/Home/screen.html">
+                            Home</a></li>
+                        <li ><a href="#">
+                            Modules</a></li>
+                        <li><a href="#">
+                            Piazza</a></li>
+                        <li><a href="#">
+                            Zoom Meetings</a></li>
+                        <li ><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
+                    </ul>
+            </div>
+            <div class="col-11" style="padding-left: 100px;">
+                <div class="wd-import-container text-end">
+                    <div>
+                    <button type="button" class="wd-import-button"><i class="fa fa-upload" style="padding-right: 2px;"></i>Import</button>
+                    <button type="button" class="wd-export-button"><i class="fa fa-save" style="padding-right: 2px;"></i>Export</button>
+                    <button type="button" class="wd-edit-button"><i class="fa fa-gear" style="padding: 4px;"></i></button>
+                </div>
+                </div>
+                <div class="row" >
+                    <div class="col-6">
+                        <span class="m-1" style="font-weight: 700;" for="student-name">Student Names</span>
+                        <div class="input-group  mt-2">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"  style="padding: 12px;">
+                                <i class="fa fa-search"></i>
+                              </span>
+                            </div>
+                           
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Search Students</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                    <div class="col-6">
+                        <span class="m-1" style="font-weight: 700;" for="student-name">Assignment Names</span>
+                        <div class="input-group  mt-2">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"  style="padding: 12px;">
+                                <i class="fa fa-search"></i>
+                              </span>
+                            </div>
+                           
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Search Assignments</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-3">
+                        <button type="button" class="wd-filter-button"><i class="fa fa-filter" style="padding-right: 2px;"></i>Apply Filters</button>
 
-    </td>
-</tr>
+                        </div>
+                </div>
+                <div class="table-responsive ">
+                <table class="table table-striped mt-3 border wd-border-thin">
+                    <thead>
+                      <tr>
+                        <th scope="col">Student Name</th>
+                        <th scope="col">A1 SETUP<br/>Out of 100</th>
+                        <th scope="col">A2 HTML<br/>Out of 100</th>
+                        <th scope="col">A3 CSS<br/>Out of 100</th>
+                        <th scope="col">A4 BOOTSTRAP<br/>Out of 100</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="color: red">Alice Wonderland</td>
+                        <td>98</td>
+                        <td>89</td>
+                        <td>87</td>
+                        <td><input class="rounded p-1" style="border-color: red; text-align: center;" type="text" id="input-grade-lc" value="92" maxlength="3" size="3"></td>
+                      </tr>
+                      <tr>
+                        <td style="color: red">Princess Leia</td>
+                        <td>100</td>
+                        <td>94</td>
+                        <td>84</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <td style="color: red">Luke Skywalker</td>
+                        <td>88</td>
+                        <td>97</td>
+                        <td>82</td>
+                        <td>92</td>
+                      </tr>
+                      <tr>
+                        <td style="color: red">Han Solo</td>
+                        <td>83</td>
+                        <td><input class="rounded p-1" style="border-color: red; text-align: center;" type="text" id="input-grade-lc" value="99" maxlength="3" size="3"></td>
+                        <td>94</td>
+                        <td>82</td>
+                      </tr>
+                      <tr>
+                        <td style="color: red">Lando Calresian</td>
+                        <td>83</td>
+                        <td>80</td>
+                        <td>92</td>
+                        <td>76</td>
+                      </tr>
+                      <tr>
+                        <td style="color: red">Yoda</td>
+                        <td>83</td>
+                        <td>89</td>
+                        <td>99</td>
+                        <td>89</td>
+                      </tr>
+
 </tbody>
-</table>
+</table>  
+</div>     
 </body>
 </html>

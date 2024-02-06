@@ -1,83 +1,139 @@
 <html>
   <head>
+    
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="../../../Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-<select id="speedgrader">
-    <option value="SPEEDGRADER">SpeedGrader</option>
-    <option value="DUMMY VALUE">Dummy Value</option>
-</select>
-<hr width="150px" align="left">
-<h2>Assignment Name</h2>
-<input type="text" id="assignment-name" value="A1 - ENV + HTML">
-<p>
-<form id="text-area">
-<textarea cols="25" rows="3">This is the assignment description.</textarea>
-</form>
-</p>
-<form id="text-fields">
-<p>
-<label for="points-field">Points</label><br/>
-<input id="points-text" value="100"/>
-</p>
-<p>
-<label for="assignment-group-field">Assignment Group</label><br/>
-<select> 
-<option value="ASSIGNMENTS">ASSIGNMENTS</option>
-</select>
-</p>
-<p>
-<label for="display-grade-field">Display Grade as</label><br/>
-<select> 
-<option value="PERCENTAGE">Percentage</option>
-</select>
-</p>
-<p>
-<label for="submission-type-field">Submission Type</label><br/>
-<select> 
-<option value="ONLINE">Online</option>
-</select>
-</p>
-<p>
-<label for="online-entry-options">Online Entry Options</label><br/>
-<input type="checkbox" value="TEXTENTRY"
-id="chkbox-text-entry"/>
-<label for="chkbox-text-entry">Text Entry</label><br/>
-<input type="checkbox" value="WEBSITEURL"
-id="chkbox-website-url"/>
-<label for="chkbox-website-url">Website URL</label><br/>
-<input type="checkbox" value="MEDIARECORDINGS"
-id="chkbox-media-recordings"/>
-<label for="chkbox-media-recoridngs">Media Recordings</label><br/>
-<input type="checkbox" value="STUDENTANNOTATION"
-id="chkbox-student-annotation"/>
-<label for="chkbox-student-annotation">Student Annotation</label><br/>
-<input type="checkbox" value="FILEUPLOADS"
-id="chkbox-file-uploads"/>
-<label for="chkbox-file-uploads">File Uploads</label><br/>
-</p>
-<p>
-<label>Assign</label><br/>
-<label for="assign-to-field">Assign To</label><br/>
-<input type="text" value="Everyone">
-</p>
-</form>
-<form id="due-date-field">
- <p>   
-<label for="date-field-due"> Due </label><br/>
-<input type="date" id="date-field-due" value="2021-01-01"/>
-</p>
-<p>
-    <label for="date-field-available"> Available from</label><br/>
-    <input type="date" id="date-field-available" value="2021-01-01"/> 
-</p>
-<p>
-<label for="date-field-until"> Until</label><br/>
-<input type="date" id="date-field-until" value="2021-01-01"/> 
-</p>
-</form>
-<form action="../screen.html">
-<input type="submit" value="Cancel">
-<input type="submit" value="Save">
-</form>
+    <div class="col-10">
+      <div class="row">
+          <div class="wd-breadcrumb-container" style="padding-bottom: 0;">
+      <nav style="--bs-breadcrumb-divider: '>';padding-left: 40px;padding-top: 10px;" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><i class="fa fa-bars" style="padding-right: 5px; font-weight: lighter; font-size: small;"></i><a href="/Kanbas/Courses/Home/screen.html">CS5610.11744.202310</a></li>
+              <li class="breadcrumb-item" aria-current><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+              <li class="breadcrumb-item active" aria-current><a href="/Kanbas/Courses/Assignments/Edit/screen.html" style="color: black;">A1 SETUP</a></li>
+
+          </ol>
+        </nav>
+   </div>
+   </div>
+    
+      <hr style="margin-top: 0;">
+      
+      <div class="col-11" style="padding-left: 100px;">
+          <div class="wd-publish-container">
+              <div class="wd-search-buttons float-end pb-3">
+              <span style="color: green; font-weight: 600; padding-right: 9px;"><i class="fa fa-check-circle text-success" style="padding-right: 4px;"></i>Published</span>
+              <button type="button" class="wd-edit-button"><i class="fa fa-ellipsis-v"></i></button>
+          </div>
+          </div>
+          <hr width="1000px">
+          <span class="m-1" for="assignment-name">Assignment Name</span>
+          <input type="text" id="assignment-name" class="form-control mt-2" value="A1 - SETUP">
+          <form id="text-area">
+              <textarea id="assignment-description" class="form-control mt-3 pt-3" rows="3">This is the assignment description.</textarea>
+            </form>
+            <div class="row align-items-top pb-3" >
+              <div class="col-3 text-end">
+                  <label for="points-field">Points</label>
+              </div>
+              <div class="col-9">
+                      <input id="points-text" class="form-control" value="100"/>
+              </div>
+              </div>
+              <div class="row align-items-top pb-3" >
+                  <div class="col-3 text-end">
+                      <label for="assignment-group-field">Assignment Group</label>
+                  </div>
+                  <div class="col-9">
+                      <select id="assignment-group-field" class="form-select"> 
+                          <option value="ASSIGNMENTS">Assignments</option>
+                          <option value="QUIZZES">Quizzes</option>
+                        </select>
+                  </div>
+                  </div>
+                  <div class="row align-items-top pb-3" >
+                      <div class="col-3 text-end">
+                          <label for="display-grade-field">Display Grade as</label>
+                      </div>
+                      <div class="col-9">
+                          <select id="display-grade-field" class="form-select"> 
+                              <option value="PERCENTAGE">Percentage</option>
+                              <option value="GRADE">Grade</option>
+                              </select>
+                      </div>
+                      </div>
+                      <div class="row align-items-top pb-3" >
+                          <div class="col-3 text-end">
+                             
+                          </div>
+                          <div class="col-9 pt-3 pb-4">
+                              <input class="form-check-input" type="checkbox">
+                              <label class="form-check-label">
+                                Do not count this assignment towards the final grade
+                              </label>
+                          </div>
+                          </div>
+                          <div class="row align-items-top" >
+                              <div class="col-3 text-end">
+                                  <label for="assign-field">Assign</label>
+                              </div>
+                              <div class="col-9 ">
+                                  <div class="assign-div-box border border-dark rounded p-4">
+                                      
+                                      <label class="form-check-label pb-2" style="font-weight: bold;">
+                                      Assign to
+                                      </label>
+                                      <input  class="form-control" value="Everyone"/>
+                                      <label class="form-check-label pt-3" style="font-weight: bold;">
+                                          Due
+                                          </label>
+                                          <input type="date" id="date-field-due" class="form-control " value="2021-01-01"/>
+                                         <div class="row">
+                                          <div class="col-6"> 
+                                              <label class="form-check-label pt-3" style="font-weight: bold;">
+                                                  Available from
+                                                  </label>
+                                                  <input type="date" id="date-field-due" class="form-control " value="2021-01-01"/>
+                                              </div>
+                                              <div class="col-6"> 
+                                                  <label class="form-check-label pt-3" style="font-weight: bold;">
+                                                      Until
+                                                      </label>
+                                                      <input type="date" id="date-field-due" class="form-control " value="2021-01-01"/>
+                                                  
+                                              </div>
+
+                                              <button class="btn btn-secondary w-100 mt-3">
+                                                  <i class="fa fa-plus"></i>  Add
+                                              </button>
+                                          </div>
+                                  </div>
+                           
+                              </div>
+                              <hr class="mt-3"/>
+                              <div class="wd-footer-container">
+                                  <div>
+                                  <input class="form-check-input" type="checkbox">
+                              <label style="padding-left: 2px;">
+                             
+                                Notify users that this content has changed
+                              </label>
+                          </div>
+                                  <div class="wd-save-button">
+                                  <button type="button" class="wd-cancel-button">Cancel</button>
+                                  <button type="button" class="btn btn-danger">Save</button>
+                                  
+                              </div>
+                              </div>
+                              <hr class="mt-1"/>
+                              </div>
+                    
 
 </body>

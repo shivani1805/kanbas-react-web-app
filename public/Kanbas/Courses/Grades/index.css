@@ -1,0 +1,44 @@
+.wd-import-button ,.wd-export-button{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    text-align: center; 
+
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: light;
+    border: 1.5px solid lightgray;
+     margin-right: 3px;
+
+}
+
+.wd-edit-button{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    border: 1.5px solid lightgray;
+}
+.wd-export-button:hover, .wd-import-button:hover, .wd-edit-button:hover, .wd-filter-button:hover{
+    background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
+}
+
+
+.wd-filter-button{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    padding-top: 6px;
+    padding-bottom: 6px; 
+    text-align: center; 
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: light;
+    border: 1.5px solid lightgray;
+     margin-right: 3px;
+     margin-top: 8px;
+
+}
+
+.table tbody tr td,.table thead tr{
+text-align: center;
+
+}

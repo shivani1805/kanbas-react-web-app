@@ -1,0 +1,35 @@
+.wd-footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    }
+
+   .wd-cancel-button {
+        background-color: rgb(243, 243, 243);
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px; 
+    text-align: center; 
+    /* height: 37px;
+    width: 90px; */
+    font-weight: light;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1.5px solid lightgray;
+    border-radius: 4px;
+    }
+
+    .wd-cancel-button:hover{
+
+    background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
+    }
+/*   
+    .wd-footer-container input , .wd-footer-container label {
+      order: 1;
+    }
+    
+    .wd-save-button{
+      order: 2; 
+
+    } */

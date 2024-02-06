@@ -1,0 +1,94 @@
+.wd-slide-link:hover{
+    text-decoration: underline;
+}
+.wd-slide-link{
+    color: red;
+    text-decoration: none;
+}
+.wd-button{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: light;
+    border: 1.5px solid lightgray;
+    margin-left: 3px;
+ 
+  
+    
+}
+
+.wd-button:hover{
+   
+    background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
+}
+.wd-module-button{
+    background-color: rgb(231,36,41);
+    color: white;
+    border: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: light;
+    border-radius: 4px;  
+    margin-left: 3px;  
+    }
+
+    .wd-module-button:hover{
+        background: linear-gradient(rgba(255, 0, 0, 7)0 0 );
+        
+        }
+    
+
+.wd-buttons-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px; 
+        margin-top: 10px;
+    }
+
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+.float-end{
+    margin-right: 3px;
+}
+
+

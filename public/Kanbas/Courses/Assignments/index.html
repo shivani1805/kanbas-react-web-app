@@ -1,87 +1,230 @@
 <html>
   <head>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-<input type="text" id="search-assignment" placeholder="Search for Assignments">
-<button type="button">Group</button>
-<button type="button">Assignment</button>
-<select id="edit-options">
-    <option value="EditAssignmentDate">Edit Assignment Dates</option>
-    <option value="AssignmentGroupsWeight">Assignment Groups Weight</option>
-    <option value="Gradescope">Gradescope 1.3</option>
-    <option value="Favorites">Commons Favorites</option>
-</select>
-<hr width="480px" align="left">
-<h3>ASSIGNMENTS 40% of Total
-<select id="assignment-edit-options">
-    <option value="EDIT">Edit</option>
-    <option value="SPEEDGRADER">Speed Grader</option>
-    <option value="DUPLICATE">Duplicate</option>
-    <option value="DELETE">Delete</option>
-    <option value="MOVETO">Move To..</option>
-    <option value="SENDTO">Send To..</option>
-    <option value="COPYTO">Copy To..</option>
-    <option value="SHARE">Share to Commons</option>
-</select>
-</h3>
-<ul>
-    <li><a href="Edit/screen.html">A1 - ENV + HTML </a><br> <a href="#">Multiple Modules</a> | Not available yet</li>
-    <li><a href="Edit/screen.html">A2 - CSS + BOOTSTRAP</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-    <li><a href="Edit/screen.html">A3 - JS + REACT </a><br> <a href="#">Multiple Modules</a> | Not available yet</li>
-    <li><a href="Edit/screen.html">A4 - STATE + REDUX </a><br> <a href="#">Multiple Modules</a> | Not available yet</li>
-    <li><a href="Edit/screen.html">A5 - NODE + SESSION</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-    <li><a href="Edit/screen.html">A6 - MONGO + MONGOOSE </a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-</ul>
-<h3>QUIZZES 10% of Total
-    <select id="quiz-edit-options">
-        <option value="EDIT">Edit</option>
-        <option value="SPEEDGRADER">Speed Grader</option>
-        <option value="DUPLICATE">Duplicate</option>
-        <option value="DELETE">Delete</option>
-        <option value="MOVETO">Move To..</option>
-        <option value="SENDTO">Send To..</option>
-        <option value="COPYTO">Copy To..</option>
-        <option value="SHARE">Share to Commons</option>
-    </select>
-    </h3>
-    <ul>
-        <li><a href="Edit/screen.html">Q1 - HTML</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-        <li><a href="Edit/screen.html">Q2 - CSS</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-        <li><a href="Edit/screen.html">Q3 - JS, ES6 </a><br> <a href="#">Multiple Modules</a> | Not available yet</li>
-        <li><a href="Edit/screen.html">Q4 - NODE</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-        <li><a href="Edit/screen.html">Q5 - MONGO</a><br> <a href="#">Multiple Modules</a> | Not available yet</li>
-    </ul>
+    <div class="col-11" style="padding-left: 100px;">
+        <div class="wd-search-container">
+            <input type="text" id="search-assignment" class="form-control w-25" placeholder="Search for Assignments">
+            <div class="wd-search-buttons">
+            <button type="button" class="wd-group-button"><i class="fa fa-plus"></i>Group</button>
+            <button type="button" class="btn btn-danger"><i class="fa fa-plus"></i>Assignment</button>
+            <button type="button" class="wd-edit-button"><i class="fa fa-ellipsis-v"></i></button>
+        </div>
+        </div>
+    
+    <hr width="1000px">
+    <ul class="list-group wd-modules">
+        <li class="list-group-item">
+          <div>
+            <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"><i class="fa fa-angle-down" style="font-weight: bolder; padding-left: 5px; padding-right: 4px;"></i></i>Assignments
+            <span class="float-end">
+              <span class="badge rounded-pill bg-light text-dark" style="padding: 4px; background-color: whitesmoke; font-weight: normal;">40% of Total</span>
+              <i class="fa fa-plus ms-2"></i>
+              <i class="fa fa-ellipsis-v ms-2"></i>
+            </span>
+          </div>
+        
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">A1  SETUP</a></span> 
+                <span class="float-end">
+                  <i class="fa fa-check-circle text-success"></i>
+                  <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+                <br>
+                <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+              </li>
+              </ul>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px;font-weight: bold;"><a href="Edit/screen.html">A2 HTML</a></span> 
+                  <span class="float-end">
+                    <i class="fa fa-check-circle text-success"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                  </span>
+                  <br>
+                  <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                      <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px;font-weight: bold;"><a href="Edit/screen.html">A3 CSS</a></span> 
+                      <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                      </span>
+                      <br>
+                      <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                    </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                          <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px;font-weight: bold;"><a href="Edit/screen.html">A4 BOOTSTRAP</a></span> 
+                          <span class="float-end">
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                          </span>
+                          <br>
+                          <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                        </li>
+                        </ul>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px;font-weight: bold;"><a href="Edit/screen.html">A5 JAVASCRIPT</a></span> 
+                              <span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                              </span>
+                              <br>
+                              <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                            </li>
+                            </ul>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                  <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px;font-weight: bold;"><a href="Edit/screen.html">A6 REACT</a></span> 
+                                  <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                  </span>
+                                  <br>
+                                  <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                </li>
+                                </ul>
+                                </li>
+                                </ul>
+                                <ul class="list-group wd-modules">
+                                    <li class="list-group-item">
+                                      <div>
+                                        <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"><i class="fa fa-angle-down" style="font-weight: bolder; padding-left: 5px; padding-right: 4px;"></i></i>Quizzes
+                                        <span class="float-end">
+                                          <span class="badge rounded-pill bg-light text-dark" style="padding: 4px; background-color: whitesmoke; font-weight: normal;">10% of Total</span>
+                                          <i class="fa fa-plus ms-2"></i>
+                                          <i class="fa fa-ellipsis-v ms-2"></i>
+                                        </span>
+                                      </div>
+                                      <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">Q1  HTML</a></span> 
+                                          <span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                            <i class="fa fa-ellipsis-v ms-2"></i>
+                                          </span>
+                                          <br>
+                                          <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                        </li>
+                                        </ul>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">Q2  CSS</a></span> 
+                                              <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                              </span>
+                                              <br>
+                                              <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                            </li>
+                                            </ul>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                  <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">Q3  JS , ES6</a></span> 
+                                                  <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                                  </span>
+                                                  <br>
+                                                  <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                                </li>
+                                                </ul>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                      <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">Q4  NODE</a></span> 
+                                                      <span class="float-end">
+                                                        <i class="fa fa-check-circle text-success"></i>
+                                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                                      </span>
+                                                      <br>
+                                                      <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                                    </li>
+                                                    </ul>
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                          <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">Q5  MONGO</a></span> 
+                                                          <span class="float-end">
+                                                            <i class="fa fa-check-circle text-success"></i>
+                                                            <i class="fa fa-ellipsis-v ms-2"></i>
+                                                          </span>
+                                                          <br>
+                                                          <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                                        </li>
+                                                        </ul>
+                                                        </li>
+                                                        </ul>
 
-<h3>EXAMS 20% of Total
-    <select id="exam-edit-options">
-        <option value="EDIT">Edit</option>
-        <option value="SPEEDGRADER">Speed Grader</option>
-        <option value="DUPLICATE">Duplicate</option>
-        <option value="DELETE">Delete</option>
-        <option value="MOVETO">Move To..</option>
-        <option value="SENDTO">Send To..</option>
-        <option value="COPYTO">Copy To..</option>
-        <option value="SHARE">Share to Commons</option>
-    </select>
-    </h3>
-    <ul>
-        <li><a href="Edit/screen.html">Midterm </a><br> <a href="#">Multiple Modules</a> | Not available yet</li>
-        <li><a href="Edit/screen.html">Final</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-    </ul>
-<h3>PROJECT 30% of Total
-    <select id="project-edit-options">
-        <option value="EDIT">Edit</option>
-        <option value="SPEEDGRADER">Speed Grader</option>
-        <option value="DUPLICATE">Duplicate</option>
-        <option value="DELETE">Delete</option>
-        <option value="MOVETO">Move To..</option>
-        <option value="SENDTO">Send To..</option>
-        <option value="COPYTO">Copy To..</option>
-        <option value="SHARE">Share to Commons</option>
-    </select>
-    </h3>
-    <ul>
-        <li><a href="Edit/screen.html">Project</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-    </ul>
+                                                        <ul class="list-group wd-modules">
+                                                            <li class="list-group-item">
+                                                              <div>
+                                                                <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"><i class="fa fa-angle-down" style="font-weight: bolder; padding-left: 5px; padding-right: 4px;"></i></i>Exams
+                                                                <span class="float-end">
+                                                                  <span class="badge rounded-pill bg-light text-dark" style="padding: 4px; background-color: whitesmoke; font-weight: normal;">20% of Total</span>
+                                                                  <i class="fa fa-plus ms-2"></i>
+                                                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                                                                </span>
+                                                              </div>
+                                                              <ul class="list-group">
+                                                                <li class="list-group-item">
+                                                                  <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">MIDTERM</a></span> 
+                                                                  <span class="float-end">
+                                                                    <i class="fa fa-check-circle text-success"></i>
+                                                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                                                  </span>
+                                                                  <br>
+                                                                  <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                                                </li>
+                                                                </ul>
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item">
+                                                                      <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">FINAL</a></span> 
+                                                                      <span class="float-end">
+                                                                        <i class="fa fa-check-circle text-success"></i>
+                                                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                                                      </span>
+                                                                      <br>
+                                                                      <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                                                    </li>
+                                                                    </ul>
+                                                                    
+                                                                                </li>
+                                                                                </ul>
+                                                                                <ul class="list-group wd-modules">
+                                                                                    <li class="list-group-item">
+                                                                                      <div>
+                                                                                        <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"><i class="fa fa-angle-down" style="font-weight: bolder; padding-left: 5px; padding-right: 4px;"></i></i>Project
+                                                                                        <span class="float-end">
+                                                                                          <span class="badge rounded-pill bg-light text-dark" style="padding: 4px; background-color: whitesmoke; font-weight: normal;">30% of Total</span>
+                                                                                          <i class="fa fa-plus ms-2"></i>
+                                                                                          <i class="fa fa-ellipsis-v ms-2"></i>
+                                                                                        </span>
+                                                                                      </div>
+                                                                                      <ul class="list-group">
+                                                                                        <li class="list-group-item">
+                                                                                          <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v" style="margin-left: 2px;"></i><span style="margin-left: 40px; font-weight: bold;"><a href="Edit/screen.html">PROJECT</a></span> 
+                                                                                          <span class="float-end">
+                                                                                            <i class="fa fa-check-circle text-success"></i>
+                                                                                            <i class="fa fa-ellipsis-v ms-2"></i>
+                                                                                          </span>
+                                                                                          <br>
+                                                                                          <span class="px-5"><a href="#">Multiple Modules</a> | Not available yet</li></span>
+                                                                                        </li>
+                                                                                        </ul>
+                                                                                        </li>
+                                                                                        </ul>
+                                                                                       
+   
+      </div>
     
 </body>
