@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="/Kanbas/Courses/CourseStatus/index.css" />
   </head>
   <body>
+
+    
    
-    <div class="row" >
-      <div class="col-2" style="width: 80px;" >
-          <ul class="wd-kanbas-navigation">
+
+    <div class="d-flex">
+    
+      <div class="d-none d-md-block">
+          <ul class="wd-kanbas-navigation navbar-nav mr-auto">
               <li><a href="http://northeastern.edu">N</a></li>
               <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user-circle"></i>Account</a></li>
               <li>
@@ -29,20 +33,23 @@
               <li><a href="#"><i class="fa fa-question-circle"></i><br/>Help</a></li>
             </ul>    
       </div>
-      <div class="col-10">
-        <div class="row">
+
+        <div>
+          <div class="row" style="padding-top: 13px;">
             <div class="wd-breadcrumb-container" style="padding-bottom: 0;">
-        <nav style="--bs-breadcrumb-divider: '>';padding-left: 40px;padding-top: 10px;" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><i class="fa fa-bars" style="padding-right: 5px; font-weight: lighter; font-size: small;"></i><a style="color: red; text-decoration: none;" href="/Kanbas/Courses/Home/screen.html">CS5610.11744.202310</a></li>
-                <li class="breadcrumb-item active" aria-current><a  style="color: black; text-decoration: none;" href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-            </ol>
-          </nav>
-              </div>
-        </div>
-        <hr style="margin-top: 0;">
-        <div class="row">
-          <div class="col-1">
+              <nav style="--bs-breadcrumb-divider: '>';padding-left: 40px;padding-top: 10px;" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><i class="fa fa-bars" style="padding-right: 5px; font-weight: lighter; font-size: small;color: red;" ></i><a style="color: red; text-decoration: none;" href="/Kanbas/Courses/Home/screen.html">CS5610.11744.202310</a></li>
+                      <li class="breadcrumb-item active" aria-current><a  style="color: black; text-decoration: none;" href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                  </ol>
+                </nav>
+                    </div>
+          </div>
+          <hr style="margin-top: 10px;" >
+          <div class="row" style="padding-top: 6px;">
+            <div class="col-1">
+        <div class="d-none d-md-block">
+  
           
           <ul class="wd-navigation">
               <li class="wd-active"> 
@@ -69,8 +76,12 @@
               <li><a href="#">Syllabus</a></li>
               <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
           </ul>
+
       </div>
-      <div class="col-8" style="padding-left: 90px;">
+    </div>
+    <div class="col-10" style="padding-left: 50px;">
+      <div class="flex-fill" style="padding-left: 20px;">
+
         <div class="wd-buttons-container">
           <button class="wd-button" type="button">Collapse All</button>
           <button class="wd-button" type="button">View Progress</button>
@@ -262,9 +273,11 @@
           </li>
       </ul>
     </div>
-    <div class="col-3" style="padding-left: 50px;">
+    </div>
+    <div class="col-1">
+    <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px;padding-left: 20px;padding-top: 10px;">
       <h5>Course Status</h5>
-      <div class="wd-buttons-container" style="padding-right: 11px;">
+      <div class="wd-buttons-container" >
           <button class="wd-button" type="button"><i class="fa fa-ban" style="padding-right: 10px;"></i>Unpublish</button>
           <button class="wd-button-publish" type="button"><i class="fa fa-check-circle" style="padding-right: 10px;"></i>Published</button>
       </div>
@@ -280,7 +293,7 @@
       
       <div class="wd-comingup-container" style="padding-top: 30px;">
       <h5>Coming Up</h5>
-      <a href="#" style="padding-left: 2px;"><i class="fa fa-calendar-o" style="color: black; padding-right: 5px;"></i>View Calendar</a>
+      <a href="#"><i class="fa fa-calendar-o" style="color: black; padding-right: 5px;"></i>View Calendar</a>
       </div>
       <hr>
       <div class="wd-comingup-content-container">
@@ -291,10 +304,11 @@
               </ul>
           </div>
           </div>
-    </div>
+          </div>
+          </div>
+        </div>
 
-        </body>
       </div>
-    </div>
+
   </body>
 </html>
