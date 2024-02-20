@@ -1,0 +1,11 @@
+.wd-home-div{
+    display: flex;
+    justify-content: space-between;
+}
+.wd-mod-div{
+    width: 75%;
+ 
+}
+.wd-course-status-div{
+    padding-left: 4%;
+}

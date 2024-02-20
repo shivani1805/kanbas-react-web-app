@@ -1,0 +1,48 @@
+.wd-search-container{
+    display: flex;
+    justify-content: space-between;
+}
+.wd-group-button,.wd-edit-button{
+   
+    background-color: rgb(243, 243, 243)  ;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: light;
+    border: 1.5px solid lightgray;
+    margin-right: 2px;
+
+}
+.wd-group-button:hover,.wd-edit-button:hover{
+background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
+color: black;
+border: rgba(195, 192, 192, 0.764) ;
+
+}
+.wd-filepen{
+    color: green;
+    margin-right: 7px;
+}
+.list-group-item a{
+    text-decoration: none;
+    color: black;
+}
+.list-group-item a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.wd-assignment-details{
+    margin-left: 4.5%;
+    font-weight: 300;
+    font-size: small;
+}
+.wd-assignment-module{
+    color: red;
+    font-weight: 400;
+}
+.wd-fa-plus-assignment{
+   margin-right: 4px;
+   margin-bottom: 3px;
+   font-size: small;
+
+}

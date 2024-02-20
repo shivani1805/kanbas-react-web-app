@@ -1,0 +1,10 @@
+.wd-brdcrmb { 
+padding-top: 15px;
+padding-left: 15px;
+
+}
+.wd-brdcrmb-course a{
+    color: red ;
+    text-decoration: none;
+}
+.breadcrumb-item+.breadcrumb-item::before { content: ">" !important; }

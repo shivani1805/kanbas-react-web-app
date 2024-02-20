@@ -1,0 +1,63 @@
+
+.wd-import-button ,.wd-export-button,.wd-filter-button{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: light;
+    border: 1.5px solid lightgray;
+     margin-right: 10px;
+
+}
+
+.wd-edit-button{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    border: 1.5px solid lightgray;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+}
+.wd-export-button:hover, .wd-import-button:hover, .wd-edit-button:hover, .wd-filter-button:hover{
+    background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
+    border: 1.5px solid lightgray;
+    color: black;
+}
+.wd-import-container{
+    display: flex;
+    justify-content: space-between;
+}
+.wd-gradebook-drop{
+    background-color: white;
+    border: none;
+    color: red;
+}
+.wd-gradebook-drop:hover{
+    text-decoration: underline;
+    border: 1.5px solid red;
+    background-color: white;
+    color: red;
+}
+.wd-key-button, .wd-key-button:hover{
+    color: red;
+    background-color: white;
+    border: none;
+}
+.table .wd-grade-user-col{
+    color: red;
+}
+.table .wd-grade-col{
+    text-align: center;
+}
+.table .wd-th-assignment{
+    text-align: center;
+}
+.table th{
+    font-weight: 600;
+}
+.table .wd-th-student-name{
+ vertical-align:middle;
+ padding-left: 1%;
+}

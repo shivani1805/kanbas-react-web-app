@@ -1,0 +1,49 @@
+.wd-button-unpub,.wd-button-cs{
+    margin-right: 2px;
+    background-color: rgb(243, 243, 243)  ;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: light;
+    border: 1.5px solid lightgray;
+    margin-left: 3px;
+}
+.wd-button-unpub:hover{
+    background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
+   color: black;
+   border: rgba(195, 192, 192, 0.764) ;
+    
+    }
+.icon-course-status{
+    padding-right: 4px;
+    padding-bottom: 3px;
+    font-size: larger;
+    color: black;
+}
+.wd-button-cs{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 5px;
+    width: 235px;
+    text-align: left;
+}
+.wd-comingup-container{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.list-group{
+    list-style: none;
+
+}
+.cal-link{
+    color: red;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+.cal-link:hover{
+    text-decoration: underline;
+
+}
