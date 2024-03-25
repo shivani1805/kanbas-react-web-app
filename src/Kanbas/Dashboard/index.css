@@ -1,0 +1,32 @@
+.wd-module-add{
+    background-color: rgb(18, 157, 0);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: light;
+    border: 1.5px solid rgb(18, 157, 18);
+
+  }
+  .wd-module-udpate{
+    margin-left: 3px;
+  }
+  .wd-module-add:hover{
+    background: linear-gradient(rgb(16, 131, 0) 0 0);
+    color: white;
+    border: 1.5px solid rgb(16, 131, 18);
+  }
+  .wd-course-edit{
+    background-color: rgb(243, 243, 243)  ;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: light;
+    border: 1.5px solid lightgray;
+  
+  }
+  .wd-course-edit:hover{
+    background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
+    color: black;
+    border: 1.5px solid rgb(195, 192, 192);
+     
+  }

@@ -12,7 +12,7 @@ import Assignments from "./Assignments";
 import Grades from "./Grades";
 import AssignmentEditor from "./Assignments/Editor";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   return (

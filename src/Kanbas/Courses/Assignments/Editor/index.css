@@ -18,7 +18,7 @@
 .wd-edit-ellipsis-icon:hover{
 background: linear-gradient(rgba(195, 192, 192, 0.764) 0 0);
 color: black;
-border: rgba(195, 192, 192, 0.764) ;
+border: 1.5px solid rgba(195, 192, 192, 0.764) ;
 
 }
 .wd-edit-publish-icon{

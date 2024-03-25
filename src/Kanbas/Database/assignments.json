@@ -1,11 +1,11 @@
 [
-    { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101","module":"Multiple Modules","points":"100 pts","Due":"Sep 18 at 11:59pm" },
-    { "_id": "A102", "title": "Combustion Analysis", "course": "RS101" ,"module":"Multiple Modules","points":"100 pts","Due":"Oct 2 at 11:59pm"},
-    { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101","module":"Multiple Modules","points":"100 pts","Due":"Nov 13 at 11:59pm" },
-    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" ,"module":"Multiple Modules","points":"100 pts","Due":"Sep 18 at 11:59pm"},
-    { "_id": "A202", "title": "Flow Analysis", "course": "RS102","module":"Multiple Modules","points":"100 pts","Due":"Oct 2 at 11:59pm" },
-    { "_id": "A203", "title": "Heating Analysis", "course": "RS102","module":"Multiple Modules","points":"100 pts" ,"Due":"Nov 13 at 11:59pm" },
-    { "_id": "A301", "title": "Structural Design Task", "course": "RS103","module":"Multiple Modules","points":"100 pts","Due":"Sep 18 at 11:59pm" },
-    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103","module":"Multiple Modules","points":"100 pts","Due":"Oct 2 at 11:59pm" },
-    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103","module":"Multiple Modules","points":"100 pts","Due":"Nov 13 at 11:59pm"  }
+    { "_id": "A101", "title": "Propulsion Assignment", "description":"Description for Propulsion Assignment", "course": "RS101","module":"Multiple Modules","points":"100","Due":"2024-09-18", "availableFrom":"2024-09-11", "Until":"2024-09-18" },
+    { "_id": "A102", "title": "Combustion Analysis", "description":"Description for Combustion Analysis Assignment","course": "RS101" ,"module":"Multiple Modules","points":"100","Due":"2024-10-02" , "availableFrom":"2024-10-25", "Until":"2024-10-02"},
+    { "_id": "A103", "title": "Nozzle Design Project", "description":"Description for Nozzle Design Assignment", "course": "RS101","module":"Multiple Modules","points":"100","Due":"2024-09-13", "availableFrom":"2024-09-06", "Until":"2024-09-13" },
+    { "_id": "A201", "title": "Aerodynamics Quiz", "description":"Description for Aerodynamics Quiz Assignment", "course": "RS102" ,"module":"Multiple Modules","points":"100","Due":"2024-09-18", "availableFrom":"2024-09-11", "Until":"2024-09-18"},
+    { "_id": "A202", "title": "Flow Analysis", "description":"Description for Flow Analysis Assignment","course": "RS102","module":"Multiple Modules","points":"100","Due":"2024-10-02", "availableFrom":"2024-10-25", "Until":"2024-10-02"},
+    { "_id": "A203", "title": "Heating Analysis", "description":"Description for Heating Analysis Assignment", "course": "RS102","module":"Multiple Modules","points":"100" ,"Due":"2024-09-13", "availableFrom":"2024-09-06", "Until":"2024-09-13"},
+    { "_id": "A301", "title": "Structural Design Task", "description":"Description for Structual Design Task Assignment", "course": "RS103","module":"Multiple Modules","points":"100","Due":"2024-09-18", "availableFrom":"2024-09-11", "Until":"2024-09-18" },
+    { "_id": "A302", "title": "Orbital Calculations", "description":"Description for Orbial Calculations Assignment", "course": "RS103","module":"Multiple Modules","points":"100","Due":"2024-10-02", "availableFrom":"2024-10-25", "Until":"2024-10-02" },
+    { "_id": "A303", "title": "Systems Engineering Exam",  "description":"Description for Systems Engineering Assignment","course": "RS103","module":"Multiple Modules","points":"100","Due":"2024-11-02", "availableFrom":"2024-11-25", "Until":"2024-11-02"  }
   ]

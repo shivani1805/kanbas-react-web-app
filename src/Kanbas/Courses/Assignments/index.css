@@ -46,3 +46,11 @@ border: rgba(195, 192, 192, 0.764) ;
    font-size: small;
 
 }
+.wd-assignment-delete{
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
