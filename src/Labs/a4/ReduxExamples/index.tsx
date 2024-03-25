@@ -9,13 +9,6 @@ const ReduxExamples = () => {
   return(
     <div>
       <h2>Redux Examples</h2>
-      <ul className="list-group">
-        {todos.map((todo) => (
-          <li className="list-group-item" key={todo.id}>
-            {todo.title}
-          </li>
-        ))}
-      </ul>
       <HelloRedux/>
       <CounterRedux/>
       <AddRedux/>
