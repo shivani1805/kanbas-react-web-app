@@ -1,4 +1,4 @@
-import React,{useState } from "react";
+import React,{useState,useEffect } from "react";
 import { FaCaretDown, FaCheckCircle, FaEllipsisV, FaPlus, FaPlusCircle, FaSortAmountDown } from "react-icons/fa";
 import { Link, useParams,useNavigate } from "react-router-dom";
 import {assignments} from "../../Database";
@@ -7,7 +7,9 @@ import { Button,Modal } from "react-bootstrap";
 import { FaFilePen } from "react-icons/fa6";
 import { useDispatch, useSelector} from "react-redux";
 import { KanbasState } from "../../store";
-import { deleteAssignments } from "./assignmentsReducer";
+import { deleteAssignments, setAssignments } from "./assignmentsReducer";
+import axios from "axios";
+import * as client from "./client";
 
 function Assignments() {
   const dispatch = useDispatch();
@@ -15,25 +17,44 @@ function Assignments() {
   const { courseId } = useParams();
   // const assignmentList = assignments.filter(
   //   (assignment) => assignment.course === courseId);
-  const assignmentList = useSelector((state:KanbasState) => state.assignmentReducer.assignments.filter(
-    (assignment) => assignment.course===courseId));
-    const new_assignment_id = assignmentList[0]._id.substring(0,3)+(parseInt(assignmentList[assignmentList.length-1]._id.substring(2))+1)
+  const assignmentList = useSelector((state:KanbasState) => state.assignmentReducer.assignments);
+
+  
+const new_assignment_id = "A1"+(assignmentList.length + 1);
  const assignment = useSelector((state:KanbasState)=>state.assignmentReducer.assignment);
 
  const [showConfirmation, setShowConfirmation] = useState(false);
  const [assignmentToDelete, setAssignmentToDelete] = useState("");
 
  const handleDelete = (assignmentId:string) => {
+  
   setAssignmentToDelete(assignmentId);
   setShowConfirmation(true);
 };
-const handleConfirmDelete = () => {
+const handleConfirmDelete = async() => {
+
+  const status = await client.deleteAssignment(assignmentToDelete);
+  
   dispatch(deleteAssignments(assignmentToDelete));
   setShowConfirmation(false);
 };
 const handleCloseConfirmation = () => {
   setShowConfirmation(false);
 };
+
+const API_BASE = process.env.REACT_APP_API_BASE;
+const COURSES_API =  `${API_BASE}/api/courses` //"http://localhost:4000/api/courses";
+
+const findAllAssignments = async () => {
+  const response = await axios.get(
+    `${COURSES_API}/${courseId}/assignments`);
+    dispatch(setAssignments(response.data));
+};
+
+useEffect(() => {
+  findAllAssignments();
+}, [courseId]);
+
   return (
     <>
          <div className="wd-search-container">
@@ -57,7 +78,7 @@ const handleCloseConfirmation = () => {
             </span>
           </div>
           <ul className="list-group">
-            {assignmentList.map((assignment) => (
+            {assignmentList && assignmentList.map((assignment:any) => (
               <li className="list-group-item">
                 <FaEllipsisV className="me-2" /><FaFilePen className="wd-filepen"/>
                 <Link
@@ -75,7 +96,7 @@ const handleCloseConfirmation = () => {
           <Button variant="danger" onClick={handleConfirmDelete}>Yes</Button>
         </Modal.Footer>
       </Modal>
-                 <Button className="wd-assignment-delete" variant="danger" onClick={() => handleDelete(assignment._id)}>Delete</Button>
+                 <Button className="wd-assignment-delete" variant="danger" onClick={() => handleDelete(assignment?._id)}>Delete</Button>
                   <FaCheckCircle className="text-success" /><FaEllipsisV className="ms-2" /></span>
               </li>))}
           </ul>
