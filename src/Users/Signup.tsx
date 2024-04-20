@@ -15,13 +15,13 @@ export default function Signup() {
   };
   return (
     <div>
-      <h1>Signup</h1>
+      <h1 style={{"paddingLeft":"16em"}}>Signup</h1>
       {error && <div>{error}</div>}
-      <input value={user.username} onChange={(e) => setUser({
-          ...user, username: e.target.value })} />
-      <input value={user.password} onChange={(e) => setUser({
-          ...user, password: e.target.value })} />
-      <button onClick={signup}> Signup </button>
+      <input style={{"marginLeft":"39em"}} value={user.username} onChange={(e) => setUser({
+          ...user, username: e.target.value })} /><br/>
+      <input style={{"marginLeft":"39em"}} value={user.password} onChange={(e) => setUser({
+          ...user, password: e.target.value })} /> <br/><br/>
+      <button   className="btn btn-success" style={{"marginLeft":"42em"}}  onClick={signup}> Signup </button>
     </div>
   );
 }

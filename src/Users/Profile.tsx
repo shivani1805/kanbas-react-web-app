@@ -44,9 +44,9 @@ export default function Profile() {
             <option value="ADMIN">Admin</option>
             <option value="FACULTY">Faculty</option>
             <option value="STUDENT">Student</option>
-          </select>
+          </select><br/>
           <button onClick={save}>
-          <button onClick={signout}>
+          <button className="btn btn-danger" onClick={signout}>
     Signout
   </button>
 

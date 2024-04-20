@@ -70,13 +70,18 @@ export default function UserTable() {
 
       <h1>User Table</h1>
       <table className="table">
-        <thead>
+        <thead >
+          <th>Username</th>
+          <th>Password</th>
+          <th>First Name</th>
+          <th>Last Name</th>
         <tr>
             <td>
+            <input value={user.username} onChange={(e) =>
+                setUser({ ...user, username: e.target.value })}/>
+                </td><td>
               <input value={user.password} onChange={(e) =>
                 setUser({ ...user, password: e.target.value })}/>
-              <input value={user.username} onChange={(e) =>
-                setUser({ ...user, username: e.target.value })}/>
             </td>
             <td>
               <input value={user.firstName} onChange={(e) =>
@@ -110,6 +115,7 @@ export default function UserTable() {
           {users.map((user: any) => (
             <tr key={user._id}>
               <td>{user.username}</td>
+              <td></td>
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
               <td>
