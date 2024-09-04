@@ -45,7 +45,7 @@ export default function Profile() {
             <option value="FACULTY">Faculty</option>
             <option value="STUDENT">Student</option>
           </select><br/>
-          <button onClick={save}>
+          <button style={{marginLeft:"30em",marginTop:"2em"}} onClick={save}>
           <button className="btn btn-danger" onClick={signout}>
     Signout
   </button>
